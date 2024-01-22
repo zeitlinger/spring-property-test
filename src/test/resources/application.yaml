@@ -1,0 +1,12 @@
+otel:
+  processors:
+    - batch:
+        exporter:
+           otlp:
+             endpoint: http://endpoint1
+             protocol: grpc
+    - batch:
+        exporter:
+           otlp:
+             endpoint: http://endpoint2
+             protocol: grpc
